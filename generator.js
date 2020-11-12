@@ -7,6 +7,7 @@ async function generate (dir, files, base = '', rootOptions = {}) {
   const glob = require('glob')
 
   glob.sync('**/*', {
+    dot:true,
     cwd: dir,
     nodir: true
   }).forEach(rawPath => {
