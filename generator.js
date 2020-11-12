@@ -50,6 +50,8 @@ module.exports = (api, options, rootOptions) => {
         "lodash": "^4.17.20",
         "luch-request": "^3.0.4",
         "mescroll-uni": "^1.3.3",
+        "sadais-core": "^1.0.0",
+        "sadais-piui": "^1.0.0",
         // ------------------------- 扩展依赖 End ---------------------------
       },
       devDependencies: {

@@ -1,7 +1,7 @@
 {
   // 使用easycom方式引入piui
   "easycom": {
-    "^pi-(.*)": "@/piui/components/pi-$1/index.vue"
+    "^pi-(.*)": "sadais-piui/components/pi-$1/index.vue"
   },
   "pages": [
     {

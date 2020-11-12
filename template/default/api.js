@@ -1,5 +1,5 @@
 import request from '@/utils/request'
-import { getConsts } from '@/sadais-core/consts'
+import { getConsts } from 'sadais-core/consts'
 
 /**
  * 手机号授权登录

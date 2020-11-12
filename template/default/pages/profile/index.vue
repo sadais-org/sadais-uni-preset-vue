@@ -105,7 +105,6 @@
         提交
       </pi-button>
     </view>
-    <wx-auth v-model="showWxAuthModal" />
   </view>
 </template>
 

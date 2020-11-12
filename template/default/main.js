@@ -2,11 +2,11 @@ import Vue from 'vue'
 import App from '@/App'
 
 // 引入piui
-import piui from '@/piui'
+import piui from 'sadais-piui'
 Vue.use(piui)
 
 // 引入核心业务
-import sadaisCore from '@/sadais-core'
+import sadaisCore from 'sadais-core'
 Vue.use(sadaisCore)
 
 // vuex

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { getUserInfo, saveUserInfo } from '@/sadais-core/core/auth'
+import { getUserInfo, saveUserInfo } from 'sadais-core/core/auth'
 
 Vue.use(Vuex)
 

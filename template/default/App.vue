@@ -8,7 +8,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~@/piui/scss/index.scss';
+@import 'sadais-piui/scss/index.scss';
 
 @font-face {
   font-family: dab;

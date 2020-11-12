@@ -1,6 +1,6 @@
-import request from '@/sadais-core/core/request'
+import request from 'sadais-core/core/request'
 import store from '@/store'
-import { removeUserInfo, removeTokenId } from '@/sadais-core/core/auth'
+import { removeUserInfo, removeTokenId } from 'sadais-core/core/auth'
 
 // response拦截器
 request.interceptors.response.use(async response => {
