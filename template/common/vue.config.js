@@ -1,4 +1,4 @@
 // vue.config.js
 module.exports = {
-  transpileDependencies: ['luch-request']
+  transpileDependencies: ['sadais-piui', 'sadais-core', 'luch-request']
 }
