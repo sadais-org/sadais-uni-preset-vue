@@ -9,6 +9,7 @@ export default {
 
 <style lang="scss">
 @import 'sadais-piui/scss/index.scss';
+@import 'sadais-core/assets/scss/index.scss';
 
 @font-face {
   font-family: dab;
