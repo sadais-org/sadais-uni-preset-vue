@@ -34,7 +34,8 @@
         "ignores": []
       }
     ],
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "complexity": ["warn", { "max": 6 }]
   },
   "parserOptions": {
     "parser": "babel-eslint"
