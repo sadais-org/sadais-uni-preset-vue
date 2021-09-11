@@ -51,7 +51,8 @@ module.exports = (api, options, rootOptions) => {
         "luch-request": "^3.0.4",
         "mescroll-uni": "^1.3.3",
         "sadais-core": "^1.0.0",
-        "sadais-piui": "^1.0.0",
+        "sadais-piui": "^1.0.178",
+        "@sadais/piui-tool": "^0.0.15",
         // ------------------------- 扩展依赖 End ---------------------------
       },
       devDependencies: {
