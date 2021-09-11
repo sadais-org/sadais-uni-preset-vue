@@ -1,40 +1,66 @@
 <template>
-  <view>
-    <pi-status-bar background="#a1050c" />
-    <view class="banner-wrap">
-      <pi-img
-        src="http://sadais-oss.oss-cn-hangzhou.aliyuncs.com/huafa/ma/upload/ac3af321-9836-4749-a045-3ba7cf4dae72.png"
-      />
-      <view class="pi-justify-center">
-        <pi-img :src="$consts.get('STATIC_IMG_URL') + 'home_title_miaosha.png'" width="270" />
-      </view>
+  <view class="pi-scroll-container">
+    <pi-navbar>首页</pi-navbar>
+    <pi-card title="我的" />
+    <pi-card>
+      <pi-section slot="title" title="图标颜色" />
+      <template slot="body">
+        <view class="pi-justify-around">
+          <pi-icon name="message-copy" color="red" size="16" />
+          <pi-icon name="bars" color="green" size="32" />
+          <pi-icon name="edit-line" color="blue" size="48" />
+          <pi-icon name="add" color="black" size="64" />
+        </view>
+      </template>
+    </pi-card>
+    <view class="pi-scroll pi-align-stretch pi-pd-left-24 pi-white ">
+      <view style="width: 200rpx;" class="pi-flex-column-center pi-bg-primary ">左侧</view>
+      <scroll-view scroll-y class="pi-scroll">
+        <pi-card v-for="item in 99" :key="item" :title="item + '. 标题'">{{ item }}</pi-card>
+      </scroll-view>
     </view>
   </view>
 </template>
 
 <script>
-const TAG_NAME = 'Index'
 export default {
-  name: TAG_NAME,
-  components: {}
+  data() {
+    return {
+      title: '工具类'
+    }
+  },
+  onLoad() {},
+  methods: {
+    async handleGetDeviceInfo() {
+      const systemInfo = await this.$pi.native.getSystemInfo()
+      console.log('获取系统信息', systemInfo)
+    },
+    handleChooseImage() {
+      this.$uni.chooseImage({
+        count: 2,
+        success: function(res) {
+          console.log(res)
+        }
+      })
+    }
+  }
 }
 </script>
 
-<style lang="scss">
-page {
-  background-color: #a1050c;
+<style>
+.content {
+  height: 400rpx;
+  text-align: center;
 }
-</style>
 
-<style lang="scss" scoped>
-.banner-wrap {
-  background: #a1050c;
+.logo {
+  width: 200rpx;
+  height: 200rpx;
+  margin-top: 200rpx;
 }
-.product-wrap {
-  padding: 0 32rpx 32rpx 32rpx;
-  background: #a1050c;
-  .product-item-wrap:not(:last-child) {
-    margin-bottom: 20rpx;
-  }
+
+.title {
+  font-size: 36rpx;
+  color: #8f8f94;
 }
 </style>
