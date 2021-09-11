@@ -1,8 +1,6 @@
 <template>
   <view class="pi-scroll-container" style="background: #f5f5f5;">
-    <pi-navbar>
-      个人中心
-    </pi-navbar>
+    <pi-status-bar background="#5a7dff" />
     <scroll-view scroll-y class="pi-scroll">
       <view class="header">
         <view

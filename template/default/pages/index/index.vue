@@ -25,24 +25,7 @@
 <script>
 export default {
   data() {
-    return {
-      title: '工具类'
-    }
-  },
-  onLoad() {},
-  methods: {
-    async handleGetDeviceInfo() {
-      const systemInfo = await this.$pi.native.getSystemInfo()
-      console.log('获取系统信息', systemInfo)
-    },
-    handleChooseImage() {
-      this.$uni.chooseImage({
-        count: 2,
-        success: function(res) {
-          console.log(res)
-        }
-      })
-    }
+    return {}
   }
 }
 </script>
