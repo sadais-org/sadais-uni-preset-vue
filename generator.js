@@ -106,8 +106,6 @@ module.exports = (api, options, rootOptions) => {
 
     const base = 'src'
     await generate(path.resolve(__dirname, './template/common'), files)
-    if (template === 'default') {
-      await generate(path.resolve(__dirname, './template/default'), files, base, rootOptions)
-    }
+    await generate(path.resolve(__dirname, './template/default'), files, base, rootOptions)
   })
 }
